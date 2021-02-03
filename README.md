@@ -12,7 +12,7 @@ Using the Autoencoders and their power to generalize the images, convert the ima
 
 Sample 1             |  Sample 2
 :-------------------------:|:-------------------------:
-![](cifar_autoenc.png =250x)  |  ![](ship_cifar_autoenc.png =250x)
+<img src="cifar_autoenc.png" alt="drawing" width="200"/> | <img src="ship_cifar_autoenc.png" alt="drawing" width="200"/>
 
 ## Build status
 The model architecture is ready to be used for development and deployment weights are released.
