@@ -1,8 +1,6 @@
 ## Autoencoders on CIFAR and MNIST
 Yes, N. Nets are used for Supervised Learning - we give them data and labels - they adjust weights to predict - But using autoencoders generate data and apply unsupervised learning to it - KMeans Clustering as applied here to make clusters of MNIST digits
 
----
-
 ## Motivation
 Using the Autoencoders and their power to generalize the images, convert the image into compressed form is very exciting. It enables numerous possibilites of saving the data and processing the data at very low cost.
 
@@ -14,12 +12,13 @@ Using the Autoencoders and their power to generalize the images, convert the ima
 
 Sample 1             |  Sample 2
 :-------------------------:|:-------------------------:
-![](cifar_autoenc.png)  |  ![](ship_cifar_autoenc.png)
+![](cifar_autoenc.png=10px)  |  ![](ship_cifar_autoenc.png=50px)
 
 ## Build status
 The model architecture is ready to be used for development and deployment weights are released.
 
-MNIST and CIFAR10 dataset was used to reduce the computation time and check the resuls. 
+MNIST and CIFAR10 dataset was used to reduce the computation time and check the results.
+
 http://www.cs.toronto.edu/~kriz/cifar.html
 
 http://yann.lecun.com/exdb/mnist/
@@ -42,6 +41,7 @@ This is done faster using Numpy.
 
 ```python
 # Creating the AutoEncoder Model - input and output same
+# for MNIST
 # 784 for 1 channel MNIST dataset of digits
 model = Sequential()
 model.add(Dense(128, activation='relu', input_shape=(784,)))
