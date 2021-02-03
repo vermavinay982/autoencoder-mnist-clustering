@@ -6,15 +6,6 @@ Yes, N. Nets are used for Supervised Learning - we give them data and labels - t
 ## Motivation
 Using the Autoencoders and their power to generalize the images, convert the image into compressed form is very exciting. It enables numerous possibilites of saving the data and processing the data at very low cost.
 
-
-## Build status
-The model architecture is ready to be used for development and deployment weights are released.
-
-MNIST and CIFAR10 dataset was used to reduce the computation time and check the resuls. 
-http://www.cs.toronto.edu/~kriz/cifar.html
-
-http://yann.lecun.com/exdb/mnist/
-
 ## Code style
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
@@ -24,6 +15,15 @@ http://yann.lecun.com/exdb/mnist/
 Sample 1             |  Sample 2
 :-------------------------:|:-------------------------:
 ![](cifar_autoenc.png)  |  ![](ship_cifar_autoenc.png)
+
+## Build status
+The model architecture is ready to be used for development and deployment weights are released.
+
+MNIST and CIFAR10 dataset was used to reduce the computation time and check the resuls. 
+http://www.cs.toronto.edu/~kriz/cifar.html
+
+http://yann.lecun.com/exdb/mnist/
+
 
 ## Trained for 3 epoch
 ---
