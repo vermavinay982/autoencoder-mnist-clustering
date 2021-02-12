@@ -1,19 +1,8 @@
 ## Autoencoders on CIFAR and MNIST
 Yes, N. Nets are used for Supervised Learning - we give them data and labels - they adjust weights to predict - But using autoencoders generate data and apply unsupervised learning to it - KMeans Clustering as applied here to make clusters of MNIST digits
 
----
-
 ## Motivation
 Using the Autoencoders and their power to generalize the images, convert the image into compressed form is very exciting. It enables numerous possibilites of saving the data and processing the data at very low cost.
-
-
-## Build status
-The model architecture is ready to be used for development and deployment weights are released.
-
-MNIST and CIFAR10 dataset was used to reduce the computation time and check the resuls. 
-http://www.cs.toronto.edu/~kriz/cifar.html
-
-http://yann.lecun.com/exdb/mnist/
 
 ## Code style
 
@@ -23,7 +12,17 @@ http://yann.lecun.com/exdb/mnist/
 
 Sample 1             |  Sample 2
 :-------------------------:|:-------------------------:
-![](cifar_autoenc.png)  |  ![](ship_cifar_autoenc.png)
+<img src="cifar_autoenc.png" alt="drawing" width="500"/> | <img src="ship_cifar_autoenc.png" alt="drawing" width="500"/>
+
+## Build status
+The model architecture is ready to be used for development and deployment weights are released.
+
+MNIST and CIFAR10 dataset was used to reduce the computation time and check the results.
+
+http://www.cs.toronto.edu/~kriz/cifar.html
+
+http://yann.lecun.com/exdb/mnist/
+
 
 ## Trained for 3 epoch
 ---
@@ -42,6 +41,7 @@ This is done faster using Numpy.
 
 ```python
 # Creating the AutoEncoder Model - input and output same
+# for MNIST
 # 784 for 1 channel MNIST dataset of digits
 model = Sequential()
 model.add(Dense(128, activation='relu', input_shape=(784,)))
